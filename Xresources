@@ -1,0 +1,16 @@
+#include "/home/alex/.Xresources.d/base16-xresources/xresources/base16-tomorrow-night-256.Xresources"
+
+Xft.hinting: true
+Xft.antialias: true
+URxvt.font:             xft:Source Code Pro Light:size=14
+URxvt.boldFont:         xft:Source Code Pro Light:size=14:bold
+URxvt.italicFont:       xft:Source Code Pro Light:size=14:italic
+URxvt.boldItalicFont:   xft:Source Code Pro Light:size=14:bold:italic
+
+! Scrolling
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+URxvt.scrollBar:    false
+
+URxvt.termName: rxvt-unicode-256color

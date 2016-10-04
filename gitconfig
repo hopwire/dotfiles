@@ -1,0 +1,62 @@
+[user]
+  name = Alex Cardell
+  email = alex.cardell@student.manchester.ac.uk
+[push]
+  default = simple
+[branch]
+  autosetuprebase = always
+[colour]
+  ui = true
+  status = auto
+[color]
+  ui = true
+  pager = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[core]
+  editor = vim
+  excludesfile = /home/alex/.gitignore
+[alias]
+  #################
+  # Basics
+  cp = cherry-pick
+  st = status 
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  diff = diff --word-diff
+  dc = diff --cached
+
+  ################## 
+  # LISTINGS
+  #### log aliases 
+  # Log with relative dates
+  ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  # Log with proper dates
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  # Log with changed files
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  # Log with no colours, for piping
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  # Default git log, slightly prettier
+  le = log --oneline --decorate
+  # All commits related to a file
+  fl = log -u
+  # Show modified files in last commit
+  dl = "!git ll -1" 
+  ###################
+  # FILES
+  # Find file path
+  f = "!git ls-files | grep -i"
+  # Search codebase for a string
+  gr = grep -Ii
+
+  #################
+  # Meta
+  # List aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+  # When you're too lazy to think of a commit message
+  yolo = !git commit -am \"$(curl -s whatthecommit.com/index.txt)\" && git push

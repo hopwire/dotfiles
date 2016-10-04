@@ -1,0 +1,9 @@
+!config/
+config/*
+!config/i3
+
+*.swp
+*.un~
+*.viminfo
+*.tmp
+*/tmp/*

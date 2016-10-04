@@ -1,0 +1,19 @@
+{
+  "directories": ["~/.Xresources.d", "~/.config/i3", "~/.vim", "~/.zsh"],
+        
+  "link": {
+    "config/i3": "~/.config/i3",
+    "gitconfig": "~/.gitconfig",
+    "tmux.conf": "~/.tmux.conf",
+    "vim": "~/.vim",
+    "Xresources": "~/.Xresources",
+    "Xresources.d": "~/.Xresources.d",
+    "xinitrc": "~/.xinitrc",
+    "zlogin": "~/.zlogin",
+    "zlogout": "~/.zlogout",
+    "zprofile": "~/.zprofile",
+    "zsh": "~/.zsh",
+    "zshrc": "~/.zshrc",
+    "zshenv": "~/.zshenv"
+  }
+}
