@@ -16,3 +16,6 @@
 [submodule "dotty"]
 	path = dotty
 	url = https://github.com/vibhavp/dotty.git
+[submodule "vim/pack/bundle/start/command-t"]
+	path = vim/pack/bundle/start/command-t
+	url = https://github.com/wincent/command-t.git
