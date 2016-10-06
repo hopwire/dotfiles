@@ -16,6 +16,3 @@
 [submodule "dotty"]
 	path = dotty
 	url = https://github.com/vibhavp/dotty.git
-[submodule "vim/pack/bundle/start/YouCompleteMe"]
-	path = vim/pack/bundle/start/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
