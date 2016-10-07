@@ -120,14 +120,12 @@ if v:version > 703 || v:version == 703 && has('patch541')
   set formatoptions+=j
 endif
 
-if &listchars ==# 'eol:$'
-  set list
-  set listchars=trail:-
-  set listchars=nbsp:+
-  set listchars+=tab:▷┅
-  set listchars+=extends:»
-  set listchars+=precedes:«
-endif
+set list
+set listchars=trail:-
+set listchars=nbsp:+
+set listchars+=tab:▷┅
+set listchars+=extends:»
+set listchars+=precedes:«
 
 set number
 if exists('+relativenumber')

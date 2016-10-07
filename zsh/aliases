@@ -13,7 +13,7 @@ alias g='git'
 alias r='ranger'
 alias v='vim'
 alias t='tmux'
-alias 'tat'='tmux attach -t'
+alias tat='tmux attach -t'
 
 # words
 alias xup='xrdb -I$HOME ~/.Xresources'
