@@ -1,6 +1,8 @@
 setxkbmap gb
 xset b off
 
+stty -ixon # stops ctrl S pausing 
+
 # Base 16 shell
 BASE16_SHELL="$HOME/.zsh/base16-shell/scripts/base16-tomorrow-night.sh"
 #BASE16_SHELL="$HOME/.zsh/base16-shell/scripts/base16-ocean.sh"
@@ -19,17 +21,6 @@ compinit -u
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # colorise
 zstyle ':completion:*' list-colors ''
-
-# 
-# Correction
-#
-
-# exceptions
-alias bundle='nocorrect bundle'
-alias man='nocorrect man'
-alias mkdir='nocorrect mkdir'
-alias mv='nocorrect mv'
-alias sudo='nocorrect sudo'
 
 #
 # Bindings

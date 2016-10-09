@@ -12,7 +12,6 @@ alias cl='clear'
 alias g='git'
 alias r='ranger'
 alias v='vim'
-alias t='tmux'
 alias tat='tmux attach -t'
 
 # words
@@ -23,3 +22,10 @@ alias kilssh='ssh mbyx3ac2@kilburn.cs.man.ac.uk'
 alias dots='cd ~/.dotfiles'
 alias groot='cd $(git rev-parse --show-toplevel 2> /dev/null || echo -n ".")'
 alias cdmen='sudo connman_dmenu'
+
+# autocorrent exceptions
+alias man='nocorrect man'
+alias mkdir='nocorrect mkdir'
+alias mv='nocorrect mv'
+alias cp='nocorrect cp'
+alias sudo='nocorrect sudo'
