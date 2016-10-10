@@ -8,15 +8,16 @@ imap jk <Esc>
 filetype indent plugin on
 syntax on
 set autoindent
- 
+set backspace=indent,start,eol
+
 " Backups, swaps, etc
 if exists('$SUDO_USER') " don't create root owned files
   set nobackup
-  set nowritebackup                      
+  set nowritebackup
 else " keep backup files out of the way
   set backupdir=~/local/.vim/tmp/backup
   set backupdir+=~/.vim/tmp/backup
-  set backupdir+=.                       
+  set backupdir+=.
 endif
 
 if exists('$SUDO_USER')
@@ -24,17 +25,17 @@ if exists('$SUDO_USER')
 else " keep swap files out of the away
   set directory=~/local.vim/tmp/swap//
   set directory+=~/.vim/tmp/swap//
-  set directory+=.                       
+  set directory+=.
 endif
 
-if has('persistent_undo') 
+if has('persistent_undo')
   if exists('$SUDO_USER')
     set noundofile " no root owned files
-  else 
+  else
     set undodir=~/local/.vim/tmp/undo
-    set undodir+=~/.vim/tmp/undo         
+    set undodir+=~/.vim/tmp/undo
     set undodir+=. " keep undo files out of the way
-    set undofile 
+    set undofile
   endif
 endif
 
@@ -59,7 +60,7 @@ endif
 if has('mksession')
   if isdirectory('~/local/.vim/tmp')
     set viewdir=~/local/.vim/tmp/view
-  else 
+  else
     set viewdir=~/.vim/tmp/view
   endif
   set viewoptions=cursor,folds " saving current session
@@ -69,7 +70,7 @@ endif
 " Actual settings
 "
 
-if exists('&belloff') " turn off stupid bell 
+if exists('&belloff') " turn off stupid bell
   set belloff=all
 endif
 set visualbell t_vb=
@@ -80,10 +81,6 @@ endif
 
 set whichwrap=b,s,<,>,[,],~              " allow chars to cross line boundaries
 
-" Highlighting
-"if exists('+colorcolumn')                "color block rather than column
-"  let &l:colorcolumn='+' . join(range(0,254), ',+')
-"endif
 set cursorline                           " highlight current line
 
 set t_ZH=[3m
@@ -94,8 +91,8 @@ highlight Comment cterm=italic
 if has('linebreak')
   let &showbreak='↘'                     " u-2198
   set breakindent                        " indent wrapped lines to match start
-  if exists('&breakindentopt')           
-    set breakindentopt=shift:2           " indent wrapped lines even more    
+  if exists('&breakindentopt')
+    set breakindentopt=shift:2           " indent wrapped lines even more
   endif
 endif
 
@@ -120,12 +117,7 @@ if v:version > 703 || v:version == 703 && has('patch541')
   set formatoptions+=j
 endif
 
-set list
-set listchars=trail:-
-set listchars=nbsp:+
-set listchars+=tab:▷┅
-set listchars+=extends:»
-set listchars+=precedes:«
+set list lcs=trail:-,nbsp:+,tab:▷┅,extends:»,precedes:«
 
 set number
 if exists('+relativenumber')
@@ -154,6 +146,7 @@ endif
 set switchbuf=usetab
 set expandtab
 set shiftwidth=2
+set shiftround
 set tabstop=2
 
 set textwidth=80
