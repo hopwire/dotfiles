@@ -1,2 +1,14 @@
 let mapleader="\<Space>"
 let maplocalleader="\\"
+
+imap jk <Esc>
+
+filetype indent plugin on
+syntax on
+
+if has('packages')
+  packloadall
+else 
+  source $HOME/.vim/pack/bundle/opt/vim-pathogen/autoload/pathogen.vim
+  call pathogen#infect('pack/bundle/start/{}')
+endif

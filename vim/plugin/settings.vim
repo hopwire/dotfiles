@@ -3,10 +3,6 @@ scriptencoding utf-8
 let base16colorspace=256
 color base16-tomorrow
 
-imap jk <Esc>
-
-filetype indent plugin on
-syntax on
 set autoindent
 set backspace=indent,start,eol
 
@@ -128,7 +124,7 @@ if has('showcmd')
   set showcmd
 endif
 
-set scrolloff =3
+set scrolloff=3
 set sidescrolloff=3
 set smarttab
 
