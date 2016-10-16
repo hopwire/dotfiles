@@ -28,9 +28,9 @@ zstyle ':completion:*' list-colors ''
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
-# 
+#
 # Prompt
-# 
+#
 
 autoload -U colors
 colors
@@ -51,7 +51,6 @@ zle -N zle-keymap-select
 #
 # Options
 #
-
 setopt autocd                   # .. is short for cd ..
 setopt autoparamslash           # tab complete appends / to directory
 setopt autopushd                # cd auto pushes old dir onto dir stack
@@ -69,12 +68,11 @@ setopt sharehistory             # share history across shells
 
 unsetopt beep
 
-
 #
 # Other
 #
 source $HOME/.zsh/aliases
 source $HOME/.zsh/functions
-#source $HOME/.zsh/colors
+source $HOME/.zsh/colors
 #source $HOME/.zsh/path
 #source $HOME/.zsh/vars

@@ -13,7 +13,7 @@ font pango:Source Code Pro 13
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -102,7 +102,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec i3-msg exit
 # lock i3
-bindsym $mod+Control+l exec /usr/bin/i3lock-fancy
+bindsym $mod+Control+l exec --no-startup-id /usr/bin/i3lock-fancy
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -173,4 +173,4 @@ bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_%H:%M_$wx$h_screen.png' -e
 ################
 # Execs
 #
-exec_always feh --bg-scale /home/alex/pictures/mountains.jpg
+exec_always --no-startup-id feh --bg-scale /home/alex/pictures/mountains.jpg
