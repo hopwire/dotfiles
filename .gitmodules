@@ -10,9 +10,6 @@
 [submodule "vim/pack/bundle/start/syntastic"]
 	path = vim/pack/bundle/start/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "vim/pack/bundle/start/nerdtree"]
-	path = vim/pack/bundle/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "dotty"]
 	path = dotty
 	url = https://github.com/vibhavp/dotty.git
