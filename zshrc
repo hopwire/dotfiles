@@ -74,5 +74,5 @@ unsetopt beep
 source $HOME/.zsh/aliases
 source $HOME/.zsh/functions
 source $HOME/.zsh/colors
-#source $HOME/.zsh/path
-#source $HOME/.zsh/vars
+source $HOME/.zsh/path
+source $HOME/.zsh/vars
