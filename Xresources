@@ -2,10 +2,11 @@
 
 Xft.hinting: true
 Xft.antialias: true
-URxvt.font:             xft:Source Code Pro Light:size=14
-URxvt.boldFont:         xft:Source Code Pro Light:size=14:bold
-URxvt.italicFont:       xft:Source Code Pro Light:size=14:italic
-URxvt.boldItalicFont:   xft:Source Code Pro Light:size=14:bold:italic
+
+URxvt.font:             xft:Inconsolata:size=15
+URxvt.italicFont:       xft:Inconsolata:size=15:style=Italic
+URxvt.boldFont:         xft:Inconsolata:size=15:style=Bold
+URxvt.boldItalicFont:   xft:Inconsolata:size=15:style=Bold Italic
 
 ! Scrolling
 URxvt.scrollTtyOutput: false

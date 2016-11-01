@@ -60,3 +60,6 @@
   la = "!git config -l | grep alias | cut -c 7-"
   # When you're too lazy to think of a commit message
   yolo = !git commit -am \"$(curl -s whatthecommit.com/index.txt)\" && git push
+	ctags = !.git/hooks/ctags
+[init]
+	templatedir = ~/.git_template

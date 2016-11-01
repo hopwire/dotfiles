@@ -79,7 +79,7 @@ set whichwrap=b,s,<,>,[,],~              " allow chars to cross line boundaries
 
 set cursorline                           " highlight current line
 
-set t_ZH=[3m
+set t_ZH=[3m                           " italics
 set t_ZR=[23m
 highlight Comment cterm=italic
 
