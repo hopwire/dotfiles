@@ -16,3 +16,18 @@
 [submodule "vim/pack/bundle/opt/vim-pathogen"]
 	path = vim/pack/bundle/opt/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/pack/bundle/start/vim-tmux-navigator"]
+	path = vim/pack/bundle/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/pack/bundle/start/vim-surround"]
+	path = vim/pack/bundle/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/pack/bundle/start/vim-vinegar"]
+	path = vim/pack/bundle/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
+[submodule "vim/pack/bundle/start/nerdtree"]
+	path = vim/pack/bundle/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/pack/bundle/start/nerdtree-git-plugin"]
+	path = vim/pack/bundle/start/nerdtree-git-plugin
+	url = https://github.com/scrooloose/nerdtree-git-plugin.git

@@ -10,8 +10,8 @@ tmux new-session -d -s dots -n vim
 
 # 1. editing
 tmux send-keys -t vim "vim -c CommandT" Enter
+tmux split-window -t vim -v -p 20
 
-tmux new-window -n zsh
-tmux send-keys -t zsh "git status" Enter
+tmux send-keys -t vim.2 "git status" Enter
 
 tmux attach -t dots:vim.top
