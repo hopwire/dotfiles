@@ -147,4 +147,6 @@ set tabstop=2
 
 set textwidth=80
 
+set complete+=kspell
+
 set confirm

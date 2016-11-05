@@ -1,11 +1,10 @@
 setxkbmap gb
 xset b off
 
-stty -ixon # stops ctrl S pausing 
+stty -ixon # stops ctrl S pausing - it's a vim keymap
 
 # Base 16 shell
 BASE16_SHELL="$HOME/.zsh/base16-shell/scripts/base16-tomorrow-night.sh"
-#BASE16_SHELL="$HOME/.zsh/base16-shell/scripts/base16-ocean.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 #
@@ -65,11 +64,10 @@ setopt histverify               # confirm history expansions
 setopt interactivecomments      # allow comments
 setopt printexitvalue           # print non-zero exit status
 setopt sharehistory             # share history across shells
-
 unsetopt beep
 
 #
-# Other
+# Sourcing
 #
 source $HOME/.zsh/aliases
 source $HOME/.zsh/functions
