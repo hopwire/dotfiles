@@ -31,6 +31,3 @@
 [submodule "vim/pack/bundle/start/nerdtree-git-plugin"]
 	path = vim/pack/bundle/start/nerdtree-git-plugin
 	url = https://github.com/scrooloose/nerdtree-git-plugin.git
-[submodule "vim/pack/bundle/start/vimtex"]
-	path = vim/pack/bundle/start/vimtex
-	url = https://github.com/lervag/vimtex.git
