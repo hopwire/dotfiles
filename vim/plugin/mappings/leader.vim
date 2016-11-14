@@ -16,4 +16,6 @@ nnoremap <Leader>p :echo expand('%')<CR>
 " Zap trailing whitespace
 nnoremap <silent> <Leader>zz :call mappings#zap()<CR>
 
+map <leader>n :NERDTreeToggle<CR>
+
 nnoremap <silent> <LocalLeader>c :syntax sync fromstart<CR>

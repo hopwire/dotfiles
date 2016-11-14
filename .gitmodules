@@ -22,9 +22,6 @@
 [submodule "vim/pack/bundle/start/vim-surround"]
 	path = vim/pack/bundle/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vim/pack/bundle/start/vim-vinegar"]
-	path = vim/pack/bundle/start/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar.git
 [submodule "vim/pack/bundle/start/nerdtree"]
 	path = vim/pack/bundle/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git

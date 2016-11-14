@@ -5,3 +5,5 @@ if has('folding')
 endif
 
 setlocal nolist
+
+nmap <buffer> <expr> - g:NERDTreeMapUpdir
