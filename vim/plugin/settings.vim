@@ -80,6 +80,7 @@ set whichwrap=b,s,<,>,[,],~              " allow chars to cross line boundaries
 set cursorline                           " highlight current line
 
 if has('linebreak')
+  set linebreak
   set breakindent                        " indent wrapped lines to match start
   if exists('&breakindentopt')
     set breakindentopt=shift:2           " indent wrapped lines even more
@@ -107,7 +108,7 @@ if v:version > 703 || v:version == 703 && has('patch541')
   set formatoptions+=j
 endif
 
-set list lcs=trail:-,nbsp:+,tab:▷┅,extends:»,precedes:«
+set list lcs=trail:-,nbsp:•,tab:▷┅,extends:»,precedes:«
 
 set number
 if exists('+relativenumber')
@@ -147,4 +148,7 @@ set complete+=kspell
 set shortmess+=A
 set shortmess+=I
 
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.png,*.jpg,*.gif
+
 set confirm
+

@@ -5,6 +5,9 @@ let g:NERDTreeMinimalUI=1
 " Let <leader><leader> return from nerdtree
 let g:NERDTreeCreatePrefix='silent keepalt keepjumps'
 
+" ignore
+let NERDTreeIgnore = ['\.pyc$', '\.class$', '\.swp$', '\.tmp$']
+
 if has('autocmd')
   augroup alexNERDTree
     autocmd!

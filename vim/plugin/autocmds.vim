@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 if has('autocmd')
   augroup Autocmds
     autocmd!

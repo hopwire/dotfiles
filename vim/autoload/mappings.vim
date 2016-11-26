@@ -1,6 +1,6 @@
 " Zap trailing whitespace
 function! mappings#zap() abort
-  let l:post=getcurpos()
+  let l:pos=getcurpos()
   let l:search=@/
   keepjumps %substitute/\s\+$//e
   let @/=l:search

@@ -172,6 +172,10 @@ bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_%H:%M_$wx$h_screen.png' -e
 
 ################
 # Execs
-#
-exec_always --no-startup-id feh --bg-scale /home/alex/pictures/mountains.jpg
-exec_always --no-startup-id clipit
+
+# Wallpaper
+exec --no-startup-id feh --bg-scale /home/alex/pictures/mountains.jpg
+# Lock screen
+exec --no-startup-id xss-lock -- i3lock -i /home/alex/pictures/mountains.png
+# Clipboard manager
+exec --no-startup-id clipit

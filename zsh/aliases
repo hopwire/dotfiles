@@ -1,5 +1,5 @@
 # ALIASES
-# replacements
+# basic replacements
 alias cp='cp -v'
 alias cat='cat -n'
 alias mv='mv -v'
@@ -8,11 +8,13 @@ alias mkdir='mkdir -v'
 alias ls='ls --color=auto --group-directories-first'
 alias cl='clear'
 
-# single letters
+# abbreviations
 alias g='git'
 alias r='ranger'
 alias v='vim'
 alias tat='tmux attach -t'
+alias py='python'
+alias con='connmanctl'
 
 # words
 alias xup='xrdb -I$HOME ~/.Xresources'
@@ -22,8 +24,6 @@ alias kilssh='ssh mbyx3ac2@kilburn.cs.man.ac.uk'
 alias dots='cd ~/.dotfiles'
 alias groot='cd $(git rev-parse --show-toplevel 2> /dev/null || echo -n ".")'
 alias cdmen='sudo connman_dmenu'
-
-alias py='python'
 
 # xrandr
 alias mirrorhdmi='xrandr --output HDMI2 --auto --same-as eDP1'

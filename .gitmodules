@@ -28,3 +28,9 @@
 [submodule "vim/pack/bundle/start/nerdtree-git-plugin"]
 	path = vim/pack/bundle/start/nerdtree-git-plugin
 	url = https://github.com/scrooloose/nerdtree-git-plugin.git
+[submodule "vim/pack/bundle/start/lightline.vim"]
+	path = vim/pack/bundle/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/pack/bundle/start/vim-commentary"]
+	path = vim/pack/bundle/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git

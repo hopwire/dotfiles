@@ -3,10 +3,10 @@
 Xft.hinting: true
 Xft.antialias: true
 
-URxvt.font:             xft:Inconsolata:size=15
-URxvt.italicFont:       xft:Inconsolata:size=15:style=Italic
-URxvt.boldFont:         xft:Inconsolata:size=15:style=Bold
-URxvt.boldItalicFont:   xft:Inconsolata:size=15:style=Bold Italic
+URxvt.font:             xft:Inconsolata:size=15, xft:Inconsolata for Powerline
+URxvt.boldFont:         xft:Inconsolata:bold:size=15
+URxvt.italicFont:       xft:Inconsolata:italic:size=15
+URxvt.boldItalicFont:   xft:Inconsolata:bold:italic:size=15
 
 ! Scrolling
 URxvt.scrollTtyOutput: false
