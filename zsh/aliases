@@ -17,13 +17,14 @@ alias py='python'
 alias con='connmanctl'
 
 # words
-alias xup='xrdb -I$HOME ~/.Xresources'
+alias xup='xrdb ~/.Xresources'
 alias lock='/usr/bin/i3lock-fancy'
 alias sdnow='shutdown now'
 alias kilssh='ssh mbyx3ac2@kilburn.cs.man.ac.uk'
 alias dots='cd ~/.dotfiles'
 alias groot='cd $(git rev-parse --show-toplevel 2> /dev/null || echo -n ".")'
 alias cdmen='sudo connman_dmenu'
+alias vpn='sudo openvpn /etc/openvpn/client/Switzerland.conf'
 
 # xrandr
 alias mirrorhdmi='xrandr --output HDMI2 --auto --same-as eDP1'
