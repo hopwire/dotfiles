@@ -5,7 +5,9 @@
 from subprocess import check_output, Popen
 import os
 
-def color(percent):
+def color(percent, state):
+    if state == "Charging":
+        return "#00d0ff"
     if percent < 5:
         return "#FFFFFF"
     if percent < 10:
@@ -44,7 +46,7 @@ timeleft += " {}".format(time)
 
 if state == "Discharging":
     form = ' <span color="{}">{}</span>'
-    fulltext += form.format(color(percentleft), FA_DIS)
+    fulltext += form.format(color(percentleft, state), FA_DIS)
 elif state == "Charging":
     fulltext += " " + FA_CHR
 else:
@@ -52,7 +54,7 @@ else:
 
 form =  '<span color="{}">{}%</span>'
 percent_string = str(percentleft).rjust(3)
-fulltext += form.format(color(percentleft), percent_string)
+fulltext += form.format(color(percentleft, state), percent_string)
 
 if os.environ.get('BLOCK_BUTTON'):
     Popen(['notify-send', timeleft])
