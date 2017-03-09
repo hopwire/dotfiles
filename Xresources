@@ -3,10 +3,15 @@
 Xft.hinting: true
 Xft.antialias: true
 
-URxvt.font:             xft:Inconsolata:size=16, xft:Inconsolata for Powerline
-URxvt.boldFont:         xft:Inconsolata:bold:size=16
-URxvt.italicFont:       xft:Inconsolata:italic:size=16
-URxvt.boldItalicFont:   xft:Inconsolata:bold:italic:size=16
+*.font:             xft:Inconsolata:size=17
+*.boldFont:         xft:Inconsolata:bold:size=17
+*.italicFont:       xft:Inconsolata:italic:size=17
+*.boldItalicFont:   xft:Inconsolata:bold:italic:size=17
+
+URxvt.font:                         xft:Inconsolata:size=17, xft:Inconsolata for Powerline
+URxvt.boldFont:                xft:Inconsolata:bold:size=17
+URxvt.italicFont:            xft:Inconsolata:italic:size=17
+URxvt.boldItalicFont:   xft:Inconsolata:bold:italic:size=17
 
 ! Scrolling
 URxvt.scrollTtyOutput: false
@@ -15,3 +20,12 @@ URxvt.scrollTtyKeypress: true
 URxvt.scrollBar:    false
 
 URxvt.termName: rxvt-unicode-256color
+
+!------------------------------------------------------------------------------
+! ROFI Color theme
+!------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
