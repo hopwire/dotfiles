@@ -1,6 +1,9 @@
 # i3 config
 set $mod Mod4
 
+set $wallpaper /home/alex/pictures/wallpapers/highway.png
+set $lockpaper /home/alex/pictures/wallpapers/highway_lock.png
+
 # .......
 # Fonts
 # .......
@@ -13,13 +16,18 @@ font pango:Inconsolata 13
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id urxvt
+# start a floating terminal
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -geometry 80x24 -name "floating_urxvt"
+for_window[class="URxvt" instance="floating_urxvt$"] floating toggle
 
 # kill focused window
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -i -fn 'Inconsolata 8' -nb '#1d1f21'
+# bindsym $mod+d exec --no-startup-id dmenu_run -i -fn 'Inconsolata 8' -nb '#1d1f21'
+# I prefer Rofi now
+bindsym $mod+d exec --no-startup-id rofi -show drun -lines 19 -font "Inconsolata 18"
 
 # change focus
 bindsym $mod+h focus left
@@ -101,8 +109,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec i3-msg exit
-# lock i3
-bindsym $mod+Control+l exec --no-startup-id i3lock -i /home/alex/pictures/wallpapers/black2_desktop.png -f
 
 
 # resize window (you can also use the mouse for that)
@@ -175,9 +181,11 @@ bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_%H:%M_$wx$h_screen.png' -c
 # Execs
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale /home/alex/pictures/wallpapers/black2_desktop.png
-# Lock screen
-exec --no-startup-id xss-lock -- i3lock -r -i /home/alex/pictures/wallpapers/black2_desktop.png -f
+exec --no-startup-id feh --bg-scale $wallpaper -f
+# Lock screen on lid close
+exec --no-startup-id xss-lock -- i3lock -i $lockpaper -f
+# Manual lock key bind
+bindsym $mod+Control+l exec --no-startup-id i3lock -i $lockpaper -f
 
 # Clipboard manager
 exec --no-startup-id clipit
