@@ -1,0 +1,2 @@
+let java_highlight_lava_lang_ids=1
+let java_highlight_all=1
