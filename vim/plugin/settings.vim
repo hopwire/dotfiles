@@ -1,7 +1,7 @@
 scriptencoding utf-8
 
 let base16colorspace=256
-color base16-tomorrow
+color base16-monokai
 
 set autoindent
 set backspace=indent,start,eol
@@ -36,21 +36,22 @@ if has('persistent_undo')
 endif
 
 if has('viminfo')
-  if exists('$SUDO_USER')
-    set viminfo= " don't create root-owned files
-  else
-    if isdirectory('~/local/.vim/tmp')
-      set viminfo+=n~/local/.vim/tmp/viminfo
-    else
-      set viminfo+=n~/.vim/tmp/viminfo
-    endif
-
-    if !empty(glob('~/.vim/tmp/viminfo'))
-      if !filereadable(expand('~/.vim/tmp/viminfo'))
-        echoerr 'warning: ~/.vim/tmp/viminfo exists but is not readable'
-      endif
-    endif
-  endif
+  set viminfo="NONE"
+"   if exists('$SUDO_USER')
+"     set viminfo= " don't create root-owned files
+"   else
+"     if isdirectory('~/local/.vim/tmp')
+"       set viminfo+=n~/local/.vim/tmp/viminfo
+"     else
+"       set viminfo+=n~/.vim/tmp/viminfo
+"     endif
+" 
+"     if !empty(glob('~/.vim/tmp/viminfo'))
+"       if !filereadable(expand('~/.vim/tmp/viminfo'))
+"         echoerr 'warning: ~/.vim/tmp/viminfo exists but is not readable'
+"       endif
+"     endif
+"   endif
 endif
 
 if has('mksession')
@@ -100,7 +101,7 @@ if has('folding')
   if has('windows')
     set fillchars=vert:┃                 " heavy vertical line (U+2503)
   endif
-  set foldmethod=indent
+  set foldmethod=syntax
   set foldlevelstart=99                  " start unfolded
 endif
 
