@@ -37,3 +37,5 @@ alias cp='nocorrect cp'
 alias sudo='nocorrect sudo'
 alias pacaur='nocorrect pacaur'
 
+# project
+alias geliprob='py ~-gel/gel/parser.py ~-gel/tests/data/iprob/iprob.mtx ~-gel/tests/data/iprob/iprob_b.mtx -p'

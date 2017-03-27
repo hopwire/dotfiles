@@ -1,5 +1,3 @@
-scriptencoding utf-8
-
 let base16colorspace=256
 color base16-monokai
 
@@ -66,6 +64,14 @@ endif
 "
 " Actual settings
 "
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
 
 if exists('&belloff') " turn off stupid bell
   set belloff=all
@@ -152,4 +158,3 @@ set shortmess+=I
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.png,*.jpg,*.gif
 
 set confirm
-

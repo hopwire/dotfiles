@@ -19,14 +19,14 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id urxvt
 # start a floating terminal
 bindsym $mod+Shift+Return exec --no-startup-id urxvt -geometry 80x24 -name "floating_urxvt"
-for_window[class="URxvt" instance="floating_urxvt$"] floating toggle
+for_window[class="URxvt" instance="floating_urxvt$"] floating enable
 
 # kill focused window
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run -i -fn 'Inconsolata 8' -nb '#1d1f21'
-# I prefer Rofi now
+#### I prefer Rofi now
 bindsym $mod+d exec --no-startup-id rofi -show drun -lines 19 -font "Inconsolata 18"
 
 # change focus
