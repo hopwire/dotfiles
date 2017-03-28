@@ -25,7 +25,22 @@ URxvt.termName: rxvt-unicode-256color
 ! ROFI Color theme
 !------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #273238, #273238, #1e2529
-rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-rofi.color-urgent: #273238, #ff1744, #273238, #394249, #ff1744
+! rofi.color-window: base00, base00, #1e2529
+! rofi.color-normal: base00, #c1c1c1, #273238, #394249, base07
+! rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+! rofi.color-urgent: #273238, #ff1744, #273238, #394249, #ff1744
+
+rofi.terminal: urxvt
+rofi.fuzzy: true
+rofi.kb-cancel: Escape,Control+c
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.fake-transparency: false
+
+! Property Name     BG       Border   Separator
+rofi.color-window:  base00, base02, base01
+
+! Property Name     BG       FG       BG-alt   Head-BG  Head-FG
+rofi.color-normal:  base00,  base05,  base00,  base09,  base01
+rofi.color-active:  base00,  base0D,  base01,  base01,  base0D
+rofi.color-urgent:  base0B,  base08,  base0B,  base01,  base08
