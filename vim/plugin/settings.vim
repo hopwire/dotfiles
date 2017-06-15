@@ -1,5 +1,5 @@
 let base16colorspace=256
-color base16-monokai
+color base16-tomorrow
 
 set autoindent
 set backspace=indent,start,eol

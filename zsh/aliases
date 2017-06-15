@@ -25,6 +25,7 @@ alias dots='cd ~/.dotfiles'
 alias groot='cd $(git rev-parse --show-toplevel 2> /dev/null || echo -n ".")'
 alias cdmen='sudo connman_dmenu'
 alias vpn='sudo openvpn /etc/openvpn/client/Switzerland.conf'
+alias remove_orphans='sudo pacman -Rs $(pacman -Qtdq)'
 
 # xrandr
 alias mirrorhdmi='xrandr --output HDMI2 --auto --same-as eDP1'
@@ -36,6 +37,3 @@ alias mv='nocorrect mv'
 alias cp='nocorrect cp'
 alias sudo='nocorrect sudo'
 alias pacaur='nocorrect pacaur'
-
-# project
-alias geliprob='py ~-gel/gel/parser.py ~-gel/tests/data/iprob/iprob.mtx ~-gel/tests/data/iprob/iprob_b.mtx -p'

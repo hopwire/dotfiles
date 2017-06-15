@@ -8,3 +8,4 @@ config/*
 *.tmp
 */tmp/*
 vim/spell/
+vim/bundle/
